@@ -1,0 +1,75 @@
+.contact {
+    width: 100%;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.contact-content {
+    flex: 1;
+    width: 100%;
+}
+
+.contact-text h2 {
+    margin-bottom: 2rem
+}
+
+.contact-cards {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    place-items: center;
+    gap: 2rem;
+}
+
+.contact-cards> :nth-child(3) {
+    grid-column: span 2;
+    justify-self: center;
+}
+
+.contact-image {
+    flex: 1;
+    width: 100%;
+    display: flex;
+}
+
+.contact-image img {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-radius: var(--borderRadius);
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+    .contact {
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 750px) {
+    .contact-text h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-cards {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .contact-text h2 {
+        margin-bottom: 1rem;
+    }
+
+    .contact-cards {
+        margin-top: 1.5rem;
+        gap: 1.5rem;
+    }
+}

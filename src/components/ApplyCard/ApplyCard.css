@@ -1,0 +1,29 @@
+.apply-card {
+    padding: 2rem;
+    border-radius: var(--borderRadius);
+    box-shadow: var(--borderShadow);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.apply-card:hover {
+    box-shadow: var(--borderShadowHover);
+    transform: scale(1.10);
+}
+
+.apply-card h5 {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 750px) {
+    .apply-card {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .apply-card {
+        padding: 1rem;
+    }
+}
